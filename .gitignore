@@ -11,10 +11,6 @@
 *.xd
 *.fig
 
-# Ignore static build files, users can run `build` to rebuild
-build/
-
 # Others
 node_modules/
-build/
 .DS_Store

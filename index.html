@@ -153,11 +153,11 @@
       </section>
 
       <!-- Testimonials Section -->
-      <section class="container flex flex-col items-center py-20" id="testimonials">
+      <section class="container flex flex-col items-center px-4 lg:px-18 xl:px-36 py-14 md:py-20" id="testimonials">
         <h3 class="text-4xl font-bold text-center">What they've said</h3>
 
         <!-- Testimonials -->
-        <div class="flex flex-row justify-between space-x-6 mt-24 mb-10">
+        <div class="flex justify-center md:justify-between md:space-x-6 mt-24 mb-10">
           <!-- Testimonial 1 -->
           <div class="hidden md:flex flex-col items-center relative bg-slate-100 pt-16 pb-10 px-5 text-center">
             <img class="absolute -top-[40px]" src="./assets/images/avatar-anisha.png" alt="Anisha Li" width="80">
@@ -204,7 +204,7 @@
         </div>
 
         <div class="flex flex-col items-center">
-          <div class="flex md:hidden items-center space-x-2 m-16">
+          <div class="flex md:hidden items-center space-x-2 my-8 md:my-16">
             <span class="border-2 rounded-full border-red-500 w-[12px] h-[12px]"></span>
             <span class="border-2 rounded-full bg-red-500 border-red-500 w-[12px] h-[12px]"></span>
             <span class="border-2 rounded-full border-red-500 w-[12px] h-[12px]"></span>
@@ -217,7 +217,7 @@
       </section>
 
       <!-- CTA Section -->
-      <section class="bg-red-500 py-16 bg-no-repeat"
+      <section class="bg-red-500 md:mt-28 py-16 bg-no-repeat"
         style="background-image: url(./assets/images/bg-simplify-section-desktop.svg)" id="cta">
         <div class="container flex flex-col md:flex-row justify-between items-center px-4 lg:px-18 xl:px-36">
           <h3 class="text-4xl font-bold text-white mb-8 md:mb-0">
@@ -235,45 +235,53 @@
     <!-- Footer Section -->
     <footer class="bg-gray-900" id="footer">
       <div
-        class="containers flex flex-col md:flex-row justify-between columns-4 space-y-10 py-16 px-4 lg:px-18 xl:px-36">
-        <!-- Logo and Social Pofiles -->
-        <div class="flex flex-col justify-between order-last md:order-first">
-          <img src="./assets/images/logo-white.svg" alt="Manage logo" width="120px">
-
-          <div class="flex space-x-4">
-            <img src="/assets/images/icon-facebook.svg" alt="Facebook">
-            <img src="/assets/images/icon-youtube.svg" alt="YouTube">
-            <img src="/assets/images/icon-twitter.svg" alt="Twitter">
-            <img src="/assets/images/icon-pinterest.svg" alt="Pinterest">
-            <img src="/assets/images/icon-instagram.svg" alt="Instagram">
-          </div>
-        </div>
-
-        <!-- Link 1 -->
-        <nav class="flex flex-col space-y-3 text-white">
-          <a href="#">Home</a>
-          <a href="#">Pricing</a>
-          <a href="#">Producs</a>
-          <a href="#">About Us</a>
-        </nav>
-
-        <!-- Link 2 -->
-        <nav class="flex flex-col space-y-3 text-white">
-          <a href="#">Careers</a>
-          <a href="#">Community</a>
-          <a href="#">Privacy Policy</a>
-        </nav>
-
+        class="container flex flex-col md:flex-row justify-between space-y-14 md:space-y-0 py-14 px-4 lg:px-18 xl:px-36">
         <!-- Newsletter -->
-        <div class="flex flex-col justify-between order-first md:order-last">
-          <form action="#">
-            <input type="text" class="py-2 px-5 rounded-full" name="email" id="email"
+        <div class="flex flex-col justify-between md:order-last">
+          <form class="flex" action="#">
+            <input type="text" class="w-3/4 py-2 px-5 rounded-full" name="email" id="email"
               placeholder="Updates in your inbox...">
-            <button type="submit" class="py-2 px-5 ml-2 rounded-full bg-red-500 text-white">Go</button>
+            <button type="submit" class="w-1/4 ml-2 py-2 px-5 rounded-full bg-red-500 text-white">Go</button>
           </form>
 
-          <p class="text-gray-500">Copyright 2020 &bull; All Rights Reserved.</p>
+          <p class="hidden md:block text-gray-500 text-right text-sm">Copyright 2020 &bull; All Rights Reserved.</p>
         </div>
+
+        <!-- Links -->
+        <div class="flex justify-center space-x-24 md:space-x-52">
+          <!-- Link 1 -->
+          <nav class="flex flex-col space-y-3 text-white">
+            <a href="#">Home</a>
+            <a href="#">Pricing</a>
+            <a href="#">Producs</a>
+            <a href="#">About Us</a>
+          </nav>
+
+          <!-- Link 2 -->
+          <nav class="flex flex-col space-y-3 text-white">
+            <a href="#">Careers</a>
+            <a href="#">Community</a>
+            <a href="#">Privacy Policy</a>
+          </nav>
+        </div>
+
+        <!-- Logo and Social Pofiles -->
+        <div class="flex flex-col items-center md:items-start md:order-first">
+          <div class="flex justify-center space-x-6 md:space-x-3 mb-14 md:mb-0 md:mt-20 md:order-last">
+            <img src="/assets/images/icon-facebook.svg" alt="Facebook" class="w-[40px] md:w-[20px]">
+            <img src="/assets/images/icon-youtube.svg" alt="YouTube" class="w-[40px] md:w-[20px]">
+            <img src="/assets/images/icon-twitter.svg" alt="Twitter" class="w-[40px] md:w-[20px]">
+            <img src="/assets/images/icon-pinterest.svg" alt="Pinterest" class="w-[40px] md:w-[20px]">
+            <img src="/assets/images/icon-instagram.svg" alt="Instagram" class="w-[40px] md:w-[20px]">
+          </div>
+
+          <img src="./assets/images/logo-white.svg" alt="Manage logo" class="w-[200px] md:w-[130px]">
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="containers md:hidden px-4 lg:px-18 xl:px-36">
+        <p class="text-gray-500 text-center pb-14">Copyright 2020 &bull; All Rights Reserved.</p>
       </div>
     </footer>
   </body>

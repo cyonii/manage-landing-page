@@ -9,6 +9,7 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
+  - [Development](#development)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -74,6 +75,14 @@ Currently, the mobile menu is not fully functional, for example, it does not ope
 ### Useful resources
 
 - [TailwindCSS Documentation](https://tailwindcss.com/docs/installation) The official documentation for TailwindCSS is a great resource for learning how to use it. It is beginner-friendly and easy to follow.
+
+## Development
+
+```bash
+  npm install # Install dependencies
+  npm run build # Compile TailwindCSS
+  npm run watch # Watch for changes
+```
 
 ## Author
 
